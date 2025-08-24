@@ -19,7 +19,7 @@ body {
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 2.7rem;
     font-weight: 700;
     margin-bottom: 32px;
     text-align: center;
@@ -53,6 +53,7 @@ h1 {
 
 .leaderboard-table tbody td {
     padding: 15px;
+    height: 64px;
     vertical-align: middle;
     border-bottom: 1px solid #e6e0d6;
     font-size: 0.95rem;

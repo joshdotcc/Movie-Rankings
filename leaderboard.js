@@ -3,20 +3,20 @@ const leaderboardMovies = [
     {
         // avatar: "https://upload.wikimedia.org/wikipedia/en/3/3e/Cars_2006.jpg",
         username: "Cars",
-        soundtrack: 4.9,
-        overall: 4.8
+        soundtrack: 5.0,
+        overall: 5.0
     },
     {
         // avatar: "https://upload.wikimedia.org/wikipedia/en/6/6e/Chicken_Little_poster.jpg",
         username: "Chicken Little",
-        soundtrack: 4.7,
-        overall: 4.7
+        soundtrack: 4.5,
+        overall: 4.9
     },
     {
         // avatar: "https://upload.wikimedia.org/wikipedia/en/6/63/Monsters_Inc.JPG",
         username: "Monsters, Inc.",
-        soundtrack: 4.8,
-        overall: 4.6
+        soundtrack: 3.0,
+        overall: 4.5
     }
 ];
 
@@ -66,9 +66,9 @@ const watchListMovies = [
 
 // Example reviews for each movie (customize as desired)
 const movieReviews = {
-    "Cars": "A fun, heartfelt Pixar adventure with memorable characters and a surprisingly touching story. The visuals and soundtrack are top notch.",
-    "Chicken Little": "A quirky, energetic animated comedy. Not a classic, but has some fun moments and nostalgia value.",
-    "Monsters, Inc.": "Pixar magic at its best. Creative world-building, lovable characters, and a perfect blend of humor and heart."
+    "Cars": "An instant classic. Amazing story, easily the best movie/sountrack combo of the century.",
+    "Chicken Little": "Cute little chicken, what's not to love? arguably the best baseball movie of the 2000s",
+    "Monsters, Inc.": "This movie leans a little on the scary side, Randal may look like a lizard, but he's more of a snake."
 };
 
 let currentTab = "overall";
