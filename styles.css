@@ -1,0 +1,287 @@
+body {
+    background: #f8f6f3;
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto 30px auto;
+    background: #fdfaf6;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(120, 90, 40, 0.07);
+    padding: 32px 28px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    text-align: center;
+    color: #5c4a2d;
+    letter-spacing: -1px;
+}
+
+.leaderboard-table {
+    width: 100%;
+    max-width: 850px;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: transparent;
+    box-shadow: 0 1px 0 #e6e0d6;
+}
+
+.leaderboard-table thead th {
+    padding: 12px 15px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: #a08c6b;
+    text-align: left;
+    border-bottom: 2px solid #e6e0d6;
+    background: #f6f2ec;
+    font-family: 'Inter', Arial, sans-serif;
+}
+.leaderboard-table thead .th-rating {
+    text-align: right;
+}
+
+.leaderboard-table tbody td {
+    padding: 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid #e6e0d6;
+    font-size: 0.95rem;
+    background: transparent;
+}
+.leaderboard-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.leaderboard-table .rank-cell {
+    width: 70px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #5c4a2d;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    border-right: 1px solid #e6e0d6;
+}
+.leaderboard-table .rank-medal {
+    display: inline-block;
+    font-size: 1.3rem;
+    vertical-align: middle;
+    margin-right: 6px;
+    line-height: 1;
+}
+.leaderboard-table .rank-num {
+    vertical-align: middle;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #5c4a2d;
+}
+
+.leaderboard-table .user {
+    display: flex;
+    align-items: center;
+}
+.leaderboard-table .user .avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 2px solid #e6e0d6;
+    background: #fff;
+}
+.leaderboard-table .user .username {
+    font-weight: 600;
+    color: #7a684a;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.score-num {
+    font-weight: 700;
+    color: #b89b5e;
+    margin-right: 2px;
+}
+
+/* --- Top 3 Styling --- */
+.leaderboard-table .rank-1 td {
+    background: #f5f3ef;
+}
+.leaderboard-table .rank-2 td {
+    background: #f1ede7;
+}
+.leaderboard-table .rank-3 td {
+    background: #ece7df;
+}
+
+/* Watch List styles */
+.watch-list-section {
+    margin-top: 48px;
+    width: 100%;
+    background: #f6f2ec;
+    border-radius: 12px;
+    padding: 24px 20px;
+    box-sizing: border-box;
+}
+.watch-list-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #7a684a;
+}
+.watch-list {
+    list-style: disc inside;
+    padding-left: 0;
+    margin: 0;
+    color: #7a684a;
+}
+.watch-list li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+/* Tabs */
+#tabs {
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.tab-btn {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #f6f2ec;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    padding: 10px 28px;
+    cursor: pointer;
+    color: #a08c6b;
+    transition: background 0.15s, color 0.15s;
+    outline: none;
+}
+.tab-btn.active {
+    background: #fff;
+    color: #b89b5e;
+    border-bottom: 2px solid #b89b5e;
+    z-index: 1;
+}
+
+/* Table */
+.leaderboard-table .rating {
+    text-align: right;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #b89b5e;
+    min-width: 90px;
+}
+
+.leaderboard-table .review-btn {
+    background: #e8e3db;
+    color: #7a684a;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 18px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    margin-left: 10px;
+}
+.leaderboard-table .review-btn:hover {
+    background: #d6cfc2;
+    color: #5c4a2d;
+}
+
+/* Modal styles */
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background: rgba(60, 50, 30, 0.18);
+}
+.modal-content {
+    background: #fffdfa;
+    border-radius: 12px;
+    padding: 40px 38px 32px 38px;
+    box-shadow: 0 8px 32px rgba(120, 90, 40, 0.13);
+    min-width: 400px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.modal-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+    color: #5c4a2d;
+}
+.modal-content textarea {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 1.05rem;
+    border-radius: 8px;
+    border: 1px solid #e6e0d6;
+    padding: 16px;
+    margin-bottom: 0;
+    resize: none;
+    min-height: 160px;
+    background: #f8f6f3;
+    color: #5c4a2d;
+    width: 100%;
+    box-sizing: border-box;
+}
+.modal-submit-btn {
+    background: #b89b5e;
+    color: #fffdfa;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background 0.15s;
+}
+.modal-submit-btn:hover {
+    background: #a08c6b;
+}
+.close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 1.5rem;
+    color: #b89b5e;
+    cursor: pointer;
+    font-family: 'Inter', Arial, sans-serif;
+}
+.close:hover {
+    color: #7a684a;
+}
+
+.disclaimer {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 1rem;
+    color: #a08c6b;
+    margin-bottom: 18px;
+    text-align: center;
+    opacity: 0.85;
+}

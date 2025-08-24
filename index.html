@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Example</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Josh's Movie Leaderboards (Childhood Movies Rewatched)</h1>
+        <div class="disclaimer">All movies listed are from before 2015.</div>
+        <div id="tabs">
+            <button id="tab-overall" class="tab-btn active" type="button">Overall</button>
+            <button id="tab-soundtrack" class="tab-btn" type="button">Soundtrack</button>
+        </div>
+        <table class="leaderboard-table" id="leaderboard">
+            <thead>
+                <tr>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Movie</th>
+                    <th scope="col" id="rating-header" class="th-rating" style="cursor:pointer;">Overall &#8597;</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-body">
+                <!-- Table rows will be rendered by JS -->
+            </tbody>
+        </table>
+
+        <div class="watch-list-section">
+            <h2>Watch List</h2>
+            <ul class="watch-list" id="watch-list">
+                <!-- Watch list will be rendered by JS -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Review Modal -->
+    <div id="review-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h3 id="modal-movie-title"></h3>
+            <textarea id="modal-review-text" placeholder="Your review..." rows="8" readonly></textarea>
+        </div>
+    </div>
+    <script src="leaderboard.js"></script>
+</body>
+</html>
