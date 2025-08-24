@@ -61,7 +61,12 @@ const watchListMovies = [
     "Hairspray",
     "Lemonade Mouth",
     "Finding Nemo",
-    "Zookeeper"
+    "Zookeeper",
+    "Open Season",
+    "Click",
+    "The Pacifier",
+    "The Croods",
+    "The Ant Bully",
 ];
 
 // Example reviews for each movie (customize as desired)
