@@ -17,6 +17,11 @@ const leaderboardMovies = [
         username: "Monsters, Inc.",
         soundtrack: 3.0,
         overall: 4.5
+    },
+    {
+        username: "Rio",
+        soundtrack: 3.0,
+        overall: 4.2
     }
 ];
 
@@ -49,7 +54,6 @@ const watchListMovies = [
     "Atlantis the Lost Empire",
     "Robots",
     "Madagascar",
-    "Rio",
     "Rango",
     "Yogi Bear",
     "The Incredibles",
@@ -67,13 +71,29 @@ const watchListMovies = [
     "The Pacifier",
     "The Croods",
     "The Ant Bully",
+    "WALL-E",
+    "Aladdin",
+    "Beauty and the Beast",
+    "Emperor’s New Groove",
+    "Megamind",
+    "Mrs. Doubtfire",
+    "Chicken Run",
+    "Holes",
+    "A Goofy Movie",
+    "Brother Bear",
+    "Meet the Robinsons",
+    "Over the Hedge",
+    "Hoodwinked",
+    "Hackers",
+    "The Art of Racing in the Rain",
 ];
 
 // Example reviews for each movie (customize as desired)
 const movieReviews = {
     "Cars": "An instant classic. Amazing story, easily the best movie/sountrack combo of the century.",
     "Chicken Little": "Cute little chicken, what's not to love? arguably the best baseball movie of the 2000s",
-    "Monsters, Inc.": "This movie leans a little on the scary side, Randal may look like a lizard, but he's more of a snake."
+    "Monsters, Inc.": "This movie leans a little on the scary side, Randal may look like a lizard, but he's more of a snake.",
+    "Rio": "Nigel kinda ruined the soundtrack, maybe the most unlikeable villain possible. He has 0 redeeming qualities."
 };
 
 let currentTab = "overall";
